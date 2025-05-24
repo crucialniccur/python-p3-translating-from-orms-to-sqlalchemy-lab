@@ -34,4 +34,4 @@ def find_by_name_and_breed(session, name, breed):
 
 
 def update_breed(session, dog, breed):
-    pass
+    session.commit()
