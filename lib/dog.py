@@ -22,7 +22,7 @@ def get_all(session):
 
 
 def find_by_name(session, name):
-    pass
+    return session.query(Dog).filter_by(dog_name=name).first()
 
 
 def find_by_id(session, id):
