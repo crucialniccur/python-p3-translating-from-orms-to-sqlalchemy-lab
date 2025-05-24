@@ -26,7 +26,7 @@ def find_by_name(session, name):
 
 
 def find_by_id(session, id):
-    pass
+    return session.query(Dog).filter_by(dog_id=id).first()
 
 
 def find_by_name_and_breed(session, name, breed):
