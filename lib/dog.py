@@ -18,7 +18,7 @@ def save(session, dog):
 
 
 def get_all(session):
-    pass
+    return [dog for dog in session.query(Dog)]
 
 
 def find_by_name(session, name):
