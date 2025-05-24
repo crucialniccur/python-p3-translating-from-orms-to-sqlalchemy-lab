@@ -12,7 +12,9 @@ def create_table(base):
 
 
 def save(session, dog):
-    pass
+    session.add(dog)
+    session.commit()
+    return session
 
 
 def get_all(session):
