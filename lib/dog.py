@@ -30,7 +30,7 @@ def find_by_id(session, id):
 
 
 def find_by_name_and_breed(session, name, breed):
-    pass
+    return session.query(Dog).filter_by(dog_name=name, dog_breed=breed).first()
 
 
 def update_breed(session, dog, breed):
